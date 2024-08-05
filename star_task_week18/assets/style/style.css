@@ -1,0 +1,16 @@
+.rating {
+	display: flex;
+}
+
+.star {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../image/free-icon-star-149220.png");
+	background-size: cover;
+	cursor: pointer;
+}
+
+.star.selected {
+	background-image: url("../image/free-icon-star-1828884.png");
+}
