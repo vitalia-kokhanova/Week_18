@@ -1,0 +1,191 @@
+.container,
+.wrapper,
+.add-task__box,
+.input__box,
+.task-list__box,
+.task-list__inner-wrapper {
+	display: flex;
+}
+
+.wrapper,
+.add-task__box,
+.task-list__box,
+.task-list__inner-wrapper {
+	flex-direction: column;
+}
+
+.wrapper {
+	width: 600px;
+	padding: 20px;
+}
+
+.add-task__box {
+	margin-bottom: 30px;
+}
+
+.input__box {
+	justify-content: space-between;
+}
+
+.input {
+	width: 70%;
+	padding-left: 10px;
+}
+
+.button {
+	width: 140px;
+	height: 50px;
+}
+
+.no-tasks__title {
+	text-align: center;
+}
+
+.clear-button {
+	align-self: flex-end;
+	margin-top: 30px;
+}
+
+.task-list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	list-style-type: none;
+	padding: 0;
+}
+
+.task-list__item-box {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	min-height: 35px;
+}
+
+.task-list__item-box:last-of-type {
+	margin-bottom: 0px;
+}
+
+.task-list__item-name {
+	width: 80%;
+	word-wrap: break-word;
+}
+
+/* Стили для чекбоксов */
+input[type="checkbox"] {
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+label {
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: relative;
+}
+
+label:hover {
+	width: 35px;
+	height: 35px;
+}
+
+.unchecked {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/check_1.png) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.checked {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/check_2.png) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.done-task {
+	text-decoration: line-through;
+	color: rgb(168, 168, 168);
+}
+
+/*
+input[type="checkbox"] + span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/check_1.png) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+input[type="checkbox"]:checked + span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/check_2.png) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	opacity: 1;
+}
+*/
+
+/* Стили для пробы */
+/*
+.checkbox-invisible {
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.label {
+	width: 30px;
+	height: 30px;
+}
+
+.label:hover {
+	width: 35px;
+	height: 35px;
+}
+
+.checkbox-span__not-checked-style {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/check_1.png) no-repeat; 
+	background-size: cover;
+	cursor: pointer; 
+	opacity: 0.5;
+}
+
+.checkbox-span__not-checked-style:checked {
+	position: absolute; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/check_2.png) no-repeat;
+	background-size: cover;
+	cursor: pointer; 
+	opacity: 1;
+}
+*/
