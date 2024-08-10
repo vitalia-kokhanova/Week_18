@@ -71,18 +71,18 @@ taskList.addEventListener("click", (e) => {
 
 // Фунцкия для сохранения структуры списка в Local Storage
 function saveData() {
-	localStorage.setItem("data", taskList.innerHTML);
+	localStorage.setItem("tasklist", taskList.innerHTML);
 }
 
 // Функция для отображения списка после обновления/закрытия сайта
 function showList() {
-	const someData = localStorage.getItem("data");
+	const someData = localStorage.getItem("tasklist");
 	if (someData) {
 		taskList.style.display = "block";
 		noTasksTitle.style.display = "none";
 		clearButton.disabled = false;
 	}
-	taskList.innerHTML = localStorage.getItem("data");
+	taskList.innerHTML = localStorage.getItem("tasklist");
 }
 
 showList();
