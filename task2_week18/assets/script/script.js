@@ -41,11 +41,11 @@ function addTask() {
 		isDone: false,
 	};
 	tasksArray.push(task);
+	saveData();
 	hideNoTasksTitle();
 	renderTasks(tasksArray);
 	clearInput();
 	enableClearAllButton();
-	saveData();
 }
 
 UI_ELEMENTS.ADD_BUTTON.addEventListener("click", addTask);
